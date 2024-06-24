@@ -1,13 +1,5 @@
-/*
-aaa
-aaaa
-5555
-header
-*/
-p#message{
-    color: orange;
-}
-/* footer */
-h1.title{
-    color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap');
+
+*{
+    font-family: "Sriracha", cursive;
 }

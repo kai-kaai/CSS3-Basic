@@ -3,27 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Format</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* สีเป็นสีแดง */
-
-        /*
-        กำหนดข้อความ
-        เป็นสีแดง
-        ให้กับแท็ก p
-        */
-        p{
-            color: red; /*สีแดง*/
+    <title>CSS Unit Example</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        .message{
+            font-size: medium;
+            color: orange;
+            font-weight: 500;
         }
-    </style>
+        #title{
+            font-size: 20px;
+            color: fuchsia;
+            font-style: italic;
+        }
+        *{
+            font-size: 25px;
+            /* background-color: rgb(0, 0, 0); */
+        }
+        div{
+            color: hsl(188, 82%, 55%);
+        }
+     </style>
 </head>
 <body>
-    <!-- inline -->
-    <p style="color: red;font-weight: bolder;">Chawakorn</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga libero, eos hic repellendus architecto in tenetur eveniet necessitatibus nesciunt nihil tempora maiores, porro saepe vel numquam! Earum adipisci ipsa itaque.</p>
     <h1>Chawakorn</h1>
-    <h1 class="title">css</h1>
-    <p id="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta accusantium asperiores, sunt porro corporis nesciunt! Voluptatibus quasi optio obcaecati? Dolore dignissimos vitae eligendi fuga sed consequatur id saepe sequi iste!</p>
+    <p class="message">Lorem ipsum dolor sit amet consectetur.</p>
+    <hr>
+    <h1>CSS3</h1>
+    <p id="title">
+        ชวกร พิมสาร
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <hr>
+    <div style="border: 1px solid rgb(255, 150, 200);" width="500px" height ="500px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum officiis inventore sapiente ullam eius laborum ut quas, provident magni quibusdam a unde assumenda aperiam, harum veniam commodi fugit non?</div>
+    <hr>
+    <form action="">
+        <label for="">ชื่อ</label>
+        <input type="text" placeholder="ป้อนชื่อของคุณ">
+    </form>
 </body>
 </html>
