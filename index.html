@@ -5,41 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Unit Example</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-     <style>
-        .message{
-            font-size: medium;
-            color: orange;
-            font-weight: 500;
-        }
-        #title{
-            font-size: 20px;
-            color: fuchsia;
-            font-style: italic;
-        }
-        *{
-            font-size: 25px;
-            /* background-color: rgb(0, 0, 0); */
-        }
+    <style>
         div{
-            color: hsl(188, 82%, 55%);
+            width: 100px;
+            height: 100px;
         }
-     </style>
+        .box-1{
+            background-color: yellow;
+            border-color: red;
+            border-style: solid;
+            border-radius: 10px 1px 15px;
+        }
+        .box-2{
+            background-color: yellowgreen;
+            border-style: solid;
+            border-color: purple;
+            border-radius: 10px 20px 30px 40px;
+        }
+        .box-3{
+            background-color: pink;
+            border-style: dotted;
+            border-color: purple;
+        }
+        .box-4{
+            background-color: white;
+            border-style: dashed;
+            border-radius: 15px 50px;
+        }
+        img{
+            border: dashed 2px orange;
+            border-top-width: 10px;
+            border-left-width: 12px;
+            border-right-width: 5px;
+            border-bottom-width: 20px;
+            width: 50%;
+            height: 50%;
+        }
+        button{
+            width: auto;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Chawakorn</h1>
-    <p class="message">Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="box-1"></div>
     <hr>
-    <h1>CSS3</h1>
-    <p id="title">
-        ชวกร พิมสาร
-        Lorem ipsum dolor sit amet consectetur.
-    </p>
+    <div class="box-2"></div>
     <hr>
-    <div style="border: 1px solid rgb(255, 150, 200);" width="500px" height ="500px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum officiis inventore sapiente ullam eius laborum ut quas, provident magni quibusdam a unde assumenda aperiam, harum veniam commodi fugit non?</div>
+    <div class="box-3"></div>
     <hr>
-    <form action="">
-        <label for="">ชื่อ</label>
-        <input type="text" placeholder="ป้อนชื่อของคุณ">
-    </form>
+    <div class="box-4"></div>
+    <hr>
+    <img src="https://cdn.pixabay.com/photo/2024/03/07/16/02/cow-8618844_1280.jpg" alt="">
+    <button>OK</button>
 </body>
 </html>
