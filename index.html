@@ -5,54 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Unit Example</title>
     <style>
-        *{
-            box-sizing: border-box;
+        a{
+            text-decoration: none;
         }
-        .container{
-            width: 960px;
-            margin: 30px auto;
+        a:link{
+            color: red;
         }
-        body{
-            line-height: 1.4em;
+        a:visited{
+            color: green;
         }
-        .box{
-            background: #f4f4f4;
-            border: 1px solid #333;
-            padding: 10px;
-            margin-bottom: 15px;
+        a:hover{
+            text-decoration: underline;
+            background-color: yellow;
+            color: red;
         }
-        #box-2{
-            float: left;
-            width: 70%;
-        }
-        #box-3{
-            float: right;
-            width: 30%;
-        }
-        .clear{
-            clear: both;
+        a:active{
+            background-color: green;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div id="box-1" class="box">
-            <h1>Title1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo pariatur amet molestiae, harum impedit ipsam sunt iusto provident iste vel voluptate eum sint asperiores, nesciunt mollitia praesentium aspernatur rem dolorem!</p>
-        </div>
-        <div id="box-2" class="box">
-            <h1>Title2</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo pariatur amet molestiae, harum impedit ipsam sunt iusto provident iste vel voluptate eum sint asperiores, nesciunt mollitia praesentium aspernatur rem dolorem!</p>
-        </div>
-        <div id="box-3" class="box">
-            <h1>Title3</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo pariatur amet molestiae, harum impedit ipsam sunt iusto provident iste vel voluptate eum sint asperiores, nesciunt mollitia praesentium aspernatur rem dolorem!</p>
-        </div>
-        <div class="clear"></div>
-        <div id="box-4" class="box">
-            <h1>Title4</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo pariatur amet molestiae, harum impedit ipsam sunt iusto provident iste vel voluptate eum sint asperiores, nesciunt mollitia praesentium aspernatur rem dolorem!</p>
-        </div>
-    </div>
+    <a href="/home">Home</a>
+    <a href="http://www.google.co.th">Google</a>
+    <a href="http://www.facebook.com">Facebook</a>
+    <a href="#">About</a>
 </body>
 </html>
