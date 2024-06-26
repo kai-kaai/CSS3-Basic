@@ -5,76 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Unit Example</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 960px;
+            margin: 30px auto;
+        }
         body{
-            background-image: url(https://cdn.pixabay.com/photo/2021/01/01/06/47/watermelon-5877895_1280.png);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
+            line-height: 1.4em;
         }
-        div{
-            border: dashed 2px orange;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        .box-1{
-            padding-top: 10px;
-            padding-left: 20px;
-            padding-bottom: 30px;
-            padding-right: 10px;
-            background-image: url(image/car1.png);
-            background-position: center;
-            background-size: 40%;
-            background-repeat: no-repeat;
-        }
-        .box-2{
+        .box{
+            background: #f4f4f4;
+            border: 1px solid #333;
             padding: 10px;
-            /* background-color: red; */
-            color: rgb(0, 0, 0);
+            margin-bottom: 15px;
         }
-        .box-3{
-            padding: 10px 10px 200px 20px;
-            /* background-color: rgb(0, 200,0); */
-            background-image: url(image/car2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            /* background: white url(image/car2.png) no-repeat; */
+        #box-2{
+            float: left;
+            width: 70%;
         }
-        .box-4{
-            padding: 20px 40px 10px;
-            /* background-color: #000; */
-            color: rgb(0, 0, 0);
+        #box-3{
+            float: right;
+            width: 30%;
         }
-        .box-5{
-            padding: 20px 10px;
-            /* background-color: hsl(25, 100%, 50%); */
-        }
-        img{
-            width: 150px;
-            margin: auto;
+        .clear{
+            clear: both;
         }
     </style>
 </head>
 <body>
-    <div class="box-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, explicabo error, libero doloribus recusandae distinctio, cupiditate repellendus mollitia nobis assumenda quas sapiente illo? Doloribus earum, in assumenda provident ad cum!
+    <div class="container">
+        <div id="box-1" class="box">
+            <h1>Title1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo pariatur amet molestiae, harum impedit ipsam sunt iusto provident iste vel voluptate eum sint asperiores, nesciunt mollitia praesentium aspernatur rem dolorem!</p>
+        </div>
+        <div id="box-2" class="box">
+            <h1>Title2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo pariatur amet molestiae, harum impedit ipsam sunt iusto provident iste vel voluptate eum sint asperiores, nesciunt mollitia praesentium aspernatur rem dolorem!</p>
+        </div>
+        <div id="box-3" class="box">
+            <h1>Title3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo pariatur amet molestiae, harum impedit ipsam sunt iusto provident iste vel voluptate eum sint asperiores, nesciunt mollitia praesentium aspernatur rem dolorem!</p>
+        </div>
+        <div class="clear"></div>
+        <div id="box-4" class="box">
+            <h1>Title4</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo pariatur amet molestiae, harum impedit ipsam sunt iusto provident iste vel voluptate eum sint asperiores, nesciunt mollitia praesentium aspernatur rem dolorem!</p>
+        </div>
     </div>
-    <div class="box-2">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, sit! Similique quisquam, debitis perferendis voluptas nobis tenetur consectetur quidem blanditiis iusto, possimus cupiditate, harum sapiente omnis ex earum necessitatibus praesentium.
-    </div>
-    <div class="box-3">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, accusantium aspernatur quam eligendi exercitationem ad placeat. Eligendi eos voluptatum quos cupiditate aliquid. Numquam quo aspernatur, et consectetur tempora eos maxime.
-    </div>
-    <div class="box-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident esse sint ipsam soluta delectus accusamus corrupti necessitatibus nemo asperiores! Repudiandae ipsa perferendis maxime possimus explicabo ullam aliquam ipsum officia.
-    </div>
-    <div class="box-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis cum minima minus est corrupti laboriosam, perspiciatis veritatis eum temporibus autem quaerat maiores, omnis sint labore dolor nobis vero reiciendis?
-    </div>
-    <div class="box-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt vel perspiciatis dolorem, reprehenderit enim eum officia inventore, odit earum quisquam nihil, quidem voluptatem quo dignissimos magni exercitationem reiciendis consequuntur.
-    </div>
-    <img src="https://cdn.pixabay.com/photo/2024/06/06/13/55/woman-8812775_1280.png" alt="">
-    <img src="https://cdn.pixabay.com/photo/2024/06/06/13/55/woman-8812775_1280.png" alt="">
-    <img src="https://cdn.pixabay.com/photo/2024/06/06/13/55/woman-8812775_1280.png" alt="">
 </body>
 </html>
