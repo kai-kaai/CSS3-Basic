@@ -4,6 +4,8 @@
 .flex-container{
     display: flex;
     background-color: aquamarine;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 .item{
     background-color: orange;
